@@ -1,0 +1,11 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About us",
+        "services": "Services",
+        "team" :"Team",
+        "contact" :"Contact us",
+        "start" :"Start now"
+
+    }
+}

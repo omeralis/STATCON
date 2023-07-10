@@ -1,0 +1,44 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top "  [ngClass]="visibilityCompare ? 'nav-header' : ''">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex nav-lang">
+      <h1 class="logo">
+        <a href="index.html"> <span class="statcon">ستاتكون</span></a>
+      </h1>
+      <div class="nav-wrapper">
+        <div class="sl-nav">
+          <ul>
+            <li [ngClass]="header ? 'service-color' : ''">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <b>{{titleLang}}</b>
+              <!-- <div class="triangle"></div> -->
+              <ul>
+                <li (click)="changeLanguage('en')">
+                  <span class="active">English</span>
+                </li>
+                <li (click)="changeLanguage('ar')">
+                  <span>Arabic</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" (click)="onClick('hero')">{{'header.home' | translate }}</a></li>
+        <li><a class="nav-link scrollto" (click)="onClick('about')" >{{'header.about' | translate }}</a></li>
+        <li><a class="nav-link scrollto" (click)="onClick('services')" >{{'header.services' | translate }}</a></li>
+        <li><a class="nav-link scrollto" (click)="onClick('team')">{{'header.team' | translate }}</a></li>
+        <li><a class="nav-link scrollto" (click)="onClick('contact')">{{'header.contact' | translate }} </a></li>
+        <li><a class="getstarted scrollto" (click)="onClick('about')" > {{'header.start' | translate }} </a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar -->
+
+  </div>
+</header>
+<!-- End Header -->

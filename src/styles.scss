@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/css/style.scss';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+[dir=rtl] #hero {
+    background-position: right;
+}

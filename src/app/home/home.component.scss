@@ -1,0 +1,13 @@
+#hero {
+    background-image: url('../../assets/img/STATCON.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@media (max-width: 991px) {
+    #hero {
+        background-size: 100%;
+        background-position: bottom;
+    }
+}
